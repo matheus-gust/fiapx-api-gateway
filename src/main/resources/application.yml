@@ -12,8 +12,8 @@ spring:
       ddl-auto: none
 
 jwt:
-  secret: ${JWT_SECRET:fiapx-super-secret-key-that-is-long-enough-for-hs256}
-  expiration: ${JWT_EXPIRATION:86400000}
+  secret: ${JWT_SECRET:fiapx-secret-key-change-in-production-must-be-256bits}
+  expiration-ms: ${JWT_EXPIRATION_MS:86400000}
 
 springdoc:
   api-docs:
@@ -23,8 +23,6 @@ springdoc:
     enabled: true
     path: /swagger-ui.html
     operations-sorter: method
-    tags-sorter: alpha
-  show-actuator: false
 
 management:
   endpoints:
