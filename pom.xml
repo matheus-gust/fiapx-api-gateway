@@ -202,7 +202,9 @@
 						<exclude>**/config/**</exclude>
 						<exclude>**/*Application.class</exclude>
 						<exclude>**/dtos/**</exclude>
-						<exclude>**/infra/persistence/**/*Entity.class</exclude>
+						<exclude>**/security/**</exclude>
+						<exclude>**/api/**</exclude>
+						<exclude>**/infra/**</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
